@@ -1071,7 +1071,7 @@ break
                 let teks = 'YouTube Search\n\n Result From '+text+'\n\n'
                 let no = 1
                 for (let i of search.all) {
-                    teks += `⭔ 𝑵𝒐 : ${no++}\n🎬 𝑻𝒚𝒑𝒆 : ${i.type}\n🎥 𝑽𝒊𝒅𝒆𝒐 ID : ${i.videoId}\n🍃 𝑻𝒊𝒕𝒍𝒆 : ${i.title}\n 𝑽𝒊𝒘𝒆𝒔 : ${i.views}\n💡 𝑫𝒖𝒓𝒂𝒕𝒊𝒐𝒏 : ${i.timestamp}\n📺 𝑼𝒑𝒍𝒐𝒂𝒅 𝑨𝒕 : ${i.ago}\n📜 𝑨𝒖𝒕𝒉𝒆𝒓 : ${i.author.name}\n🖇️ 𝑼𝒓𝒍 : ${i.url}\n\n─────────────────\n\n`
+                    teks += `⭔ عنوان الفيديو : ${no++}\n🎬 نوع : ${i.type}\n🎥 فيديو ID : ${i.videoId}\n🍃 عنوان فيديو : ${i.title}\n مشاهدات : ${i.views}\n💡 مدة الفيديو : ${i.timestamp}\n📺 تاريخ رفع الفيديو : ${i.ago}\n📜 صاحب الفيديو : ${i.author.name}\n🖇️ رابط الفيديو : ${i.url}\n\n─────────────────\n\n`
                 }
                 hisoka.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
             }
@@ -1087,7 +1087,7 @@ break
                 ]
                 let buttonMessage = {
                     image: { url: images },
-                    caption: `*-------「 IMAGE SEARCH 」-------*
+                    caption: `*-------「 البحث عن الصور 」-------*
 🤠 *𝑸𝒖𝒆𝒓𝒚* : ${text}
 🔗 *𝑴𝒆𝒅𝒊𝒂 𝑼𝒓𝒍* : ${images}`,
                     footer: hisoka.user.name,
@@ -1129,7 +1129,7 @@ let buttons = [
                         { buttonId: `ytvv ${isUrl(text)} 360p`, buttonText: { displayText: '360p' }, type: 1 },
                         { buttonId: `ytvv ${isUrl(text)} 720p`, buttonText: { displayText: '720p' }, type: 1 }
                     ]
-let lord =`🎥 𝒕𝒊𝒕𝒍𝒆 : ${media.title}\n💾 𝒇𝒊𝒍𝒆 𝒔𝒊𝒛𝒆 : ${media.filesizeF}\n🖇️ 𝒖𝒓𝒍 : ${isUrl(text)}`
+let lord =`🎥 عنوان الفيديو : ${media.title}\n💾 حجمه : ${media.filesizeF}\n🖇️ رابطه : ${isUrl(text)}`
                     await hisoka.sendButtonText(m.chat, buttons, lord, hisoka.user.name, m)
 
              }
@@ -1144,9 +1144,9 @@ const { instagramdl, instagramdlv2, instagramdlv3 } = require('@bochilteam/scrap
            let tes = text ? text : m.quoted && m.quoted.text
    let a = await instagramdlv3(tes)
    let urla = a[0].url
- await hisoka.sendMessage(m.chat, { text : '𝑃𝑙𝑒𝑎𝑠𝑒 𝑤𝑎𝑖𝑡...' }, {quoted : m})
+ await hisoka.sendMessage(m.chat, { text : 'رجاء انتظر ...' }, {quoted : m})
   for(let { thumbnail, url } of a)
-      hisoka.sendFileUrl(m.chat, urla, '𝐷𝑜𝑤𝑛𝑙𝑜𝑎𝑑𝑒𝑑 𝐹𝑟𝑜𝑚 𝐼𝑛𝑠𝑡𝑎𝑔𝑟𝑎𝑚🐦', m)
+      hisoka.sendFileUrl(m.chat, urla, 'جاري تحميل فيديو من انستغرام🐦', m)
     } catch (err) {
              hisoka.sendMessage(m.chat, { text :   err }, {quoted : m})}
             }
@@ -1183,15 +1183,15 @@ let acr = new acrcloud({
 		let button = [
                     {buttonId: `play ${title}`, buttonText: {displayText: 'HEAR THIS️'}, type: 1}
                 ]
-		let txt = `*𝑻𝒊𝒕𝒍𝒆:* ${title}
+		let txt = `*عنوان الاغنية:* ${title}
 
-*𝑨𝒓𝒕𝒊𝒔𝒕𝒔:* ${artists !== undefined ? artists.map(v => v.name).join(', ') : ''}
+*الفنان:* ${artists !== undefined ? artists.map(v => v.name).join(', ') : ''}
 
-*𝑨𝒍𝒃𝒖𝒎:* ${album.name || ''}
+*ألبوم:* ${album.name || ''}
 
-*𝑮𝒆𝒏𝒓𝒆𝒔:* ${genres !== undefined ? genres.map(v => v.name).join(', ') : ''}
+*نوعه:* ${genres !== undefined ? genres.map(v => v.name).join(', ') : ''}
 
-*𝑹𝒆𝒍𝒆𝒂𝒔𝒆 𝑫𝒂𝒕𝒆:* ${release_date}`
+*تاريخ إصداره:* ${release_date}`
 		fs.unlinkSync(`./${m.sender}.${ext}`)
 		
      await hisoka.sendButtonText(m.chat, button, txt, hisoka.user.name, m)
@@ -1615,7 +1615,7 @@ case 'menulist':{
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `مرحبا عزيزي ${pushname} \nهذه لائحة الاوامر `,
-                    description: `🐦`,
+                    description: `😄😉`,
                     buttonText: "Menu",
                     footerText: "@noureddine_ouafy",
                     listType: "SINGLE_SELECT",
@@ -1653,7 +1653,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"rowId": `databasemenu`
 										},
 										{
-											"title": "𝑨𝒏𝒐𝒏𝒚𝒎𝒐𝒖𝒔 𝑴𝒆𝒏𝒖",
+											"title": "قسم فارغ",
 										"description": "",
 										"rowId": `anonymousmenu`
 										},
@@ -1663,12 +1663,12 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"rowId": `voicemenu`
 										},
 										{
-											"title": "𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖",
+											"title": "صاحب البوت اوامر",
 										"description": "",
 										"rowId": `ownermenu`
 										},
 										{
-											"title": "𝑺𝒐𝒖𝒓𝒄𝒆 𝑪𝒐𝒅𝒆",
+											"title": "سكريبت البوت♥",
 										"description": "ʟᴏʀᴅ-ᴍᴅ 𝑔𝑖𝑡",
 										"rowId": `sc`
 										}
@@ -1685,9 +1685,9 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             break
 case 'allmenu': {
   	anu = `
-      𝐀𝐋𝐋 𝐌𝐄𝐍𝐔
+      جــــميع الاوامـــــــــر
 
-   🔰  *قسم تحميل الفيديوات / الاغانـي* 🔰   
+🔰 *قسم تحميل الفيديوات / الاغانـي*🔰   
 𑁍 ${prefix}𝑝𝑙𝑎𝑦 [اسم الاغنية]
 𑁍 ${prefix}𝑡𝑖𝑘𝑡𝑜𝑘𝑛𝑜𝑤𝑚 [رابط الفيديو]
 𑁍 ${prefix}𝑡𝑖𝑘𝑡𝑜𝑘𝑤𝑚 [رابط الفيديو]
@@ -1701,24 +1701,18 @@ case 'allmenu': {
    🔎 *قسم البحث*🔎
 🔎 ${prefix}𝑦𝑡𝑠 [البحث في اليوتوب]
 🔎 ${prefix}𝑔𝑜𝑜𝑔𝑙𝑒 [البحث في غوغل]
-🔎 ${prefix}𝑔𝑖𝑚𝑎𝑔𝑒 [𝒒𝒖𝒆𝒓𝒚]
-🔎 ${prefix}𝑤𝑎𝑙𝑙𝑝𝑎𝑝𝑒𝑟 [𝒒𝒖𝒆𝒓𝒚]
-🔎 ${prefix}𝑤𝑖𝑘𝑖𝑚𝑒𝑑𝑖𝑎 [𝒒𝒖𝒆𝒓𝒚]
-🔎 ${prefix}𝑦𝑡𝑠𝑒𝑎𝑟??ℎ [𝒒𝒖𝒆𝒓𝒚]
-🔎 ${prefix}𝑟𝑖𝑛𝑔𝑡𝑜𝑛𝑒 [𝒒𝒖𝒆𝒓𝒚]
+🔎 ${prefix}𝑔𝑖𝑚𝑎𝑔𝑒 [البحث عن الصور]
+🔎 ${prefix}𝑤𝑎𝑙𝑙𝑝𝑎𝑝𝑒𝑟 [البحث عن الصور]
+🔎 ${prefix}𝑦𝑡𝑠𝑒𝑎𝑟??ℎ [البحث في اليوتوب]
+🔎 ${prefix}𝑟𝑖𝑛𝑔𝑡𝑜𝑛𝑒 [البحث عن الرنات]
 
      🔧 *قسم تحويل الملفات*🔧
-🔧 ${prefix}𝑡𝑜𝑖𝑚𝑎𝑔𝑒
-🔧 ${prefix}𝑟𝑒𝑚𝑜𝑣𝑒𝑏𝑔
-🔧 ${prefix}𝑠𝑡𝑖𝑐𝑘𝑒𝑟
-🔧 ${prefix}𝑒𝑚𝑜𝑗𝑖𝑚𝑖𝑥
-🔧 ${prefix}𝑡𝑜𝑣𝑖𝑑𝑒𝑜
-🔧 ${prefix}𝑡𝑜𝑔𝑖𝑓
-🔧 ${prefix}𝑡𝑜𝑢𝑟𝑙
-🔧 ${prefix}𝑡𝑜𝑣𝑛
-🔧 ${prefix}𝑡𝑜𝑚𝑝3
-🔧 ${prefix}𝑡𝑜𝑎𝑢𝑑𝑖𝑜
-🔧 ${prefix}𝑠𝑡𝑦𝑙𝑒𝑡𝑒𝑥𝑡
+🔧 ${prefix}𝑡𝑜𝑖𝑚𝑎𝑔𝑒  (تحويل ملصق لصورة)
+🔧 ${prefix}𝑟𝑒𝑚𝑜𝑣𝑒𝑏𝑔 (حذف خلفية صورة)
+🔧 ${prefix}𝑠𝑡𝑖𝑐𝑘𝑒𝑟  (عمل ملصق)
+🔧 ${prefix}𝑒𝑚𝑜𝑗𝑖𝑚𝑖𝑥 (دمج ايموجيات)
+🔧 ${prefix}𝑡𝑜𝑣𝑛 (تحويل نص لأوديو)
+🔧 ${prefix}𝑠𝑡𝑦𝑙𝑒𝑡𝑒𝑥𝑡 (تغيير خطوط)
 
 
 🚫 *أوامر خاصة بصاحب البوت*🚫
@@ -1864,17 +1858,10 @@ break
 case 'convertmenu': {
 	anu = `
 *𝑪𝑶𝑵𝑽𝑬𝑹𝑻 𝑴𝑬𝑵𝑼*
-𑁍 ${prefix}𝑡𝑜𝑖𝑚𝑎𝑔𝑒
-𑁍 ${prefix}𝑟𝑒𝑚𝑜𝑣𝑒𝑏𝑔
+
 𑁍 ${prefix}𝑠𝑡𝑖𝑐𝑘𝑒𝑟
 𑁍 ${prefix}𝑒𝑚𝑜𝑗𝑖𝑚𝑖𝑥
-𑁍 ${prefix}𝑡𝑜𝑣𝑖𝑑𝑒𝑜
-𑁍 ${prefix}𝑡𝑜𝑔𝑖𝑓
-𑁍 ${prefix}𝑡𝑜𝑢𝑟𝑙
-𑁍 ${prefix}𝑡𝑜𝑣𝑛
-𑁍 ${prefix}𝑡𝑜𝑚𝑝3
-𑁍 ${prefix}𝑡𝑜𝑎𝑢𝑑𝑖𝑜
-𑁍 ${prefix}𝑠𝑡𝑦𝑙𝑒𝑡𝑒𝑥𝑡
+
   `
   reply(anu)
             }
@@ -1896,28 +1883,14 @@ break
 case 'anonymousmenu': {
 	anu = `
 *𝑨𝑵𝑶𝑵𝒀𝑴𝑶𝑼𝑺 𝑵𝑬𝑵𝑼*
-𑁍 ${prefix}𝑎𝑛𝑜𝑛𝑦𝑚𝑜𝑢𝑠
-𑁍 ${prefix}𝑠𝑡𝑎𝑟𝑡
-𑁍 ${prefix}𝑛𝑒𝑥𝑡
-𑁍 ${prefix}𝑘𝑒𝑙𝑢𝑎𝑟
-𑁍 ${prefix}𝑠𝑒𝑛𝑑𝑘𝑜𝑛𝑡𝑎𝑘`
+`
 reply(anu)
             }
 break
 case 'voicemenu': {
 	anu = `
 *𝑽𝑶𝑰𝑪𝑬 𝑪𝑯𝑨𝑵𝑮𝑬𝑹*
-𑁍 ${prefix}𝑏𝑎𝑠𝑠
-𑁍 ${prefix}𝑏𝑙𝑜𝑤𝑛
-𑁍 ${prefix}𝑑𝑒𝑒𝑝
-𑁍 ${prefix}𝑒𝑎𝑟𝑟𝑎𝑝𝑒
-𑁍 ${prefix}𝑓𝑎𝑠𝑡
-𑁍 ${prefix}𝑓𝑎𝑡
-𑁍 ${prefix}𝑛𝑖𝑔ℎ𝑡𝑐𝑜𝑟𝑒
-𑁍 ${prefix}𝑟𝑒𝑣𝑒𝑟𝑠𝑒
-𑁍 ${prefix}𝑟𝑜𝑏𝑜𝑡
-𑁍 ${prefix}𝑠𝑙𝑜𝑤
-𑁍 ${prefix}𝑡𝑢𝑝𝑎𝑖`
+`
   reply(anu)
             }
 break
