@@ -31,10 +31,10 @@ const fvid = {
                 },
 	 message: { 
                  "videoMessage": { 
-                 "title": `LoRD-MD`,
-                 "h": `LoRD-MD`,
+                 "title": `BOBIZ BOT`,
+                 "h": `BOBIZ BOT`,
                  'duration': '99999', 
-                 'caption': `LoRD-MD`,
+                 'caption': `@noureddine_ouafy`,
                  'jpegThumbnail': global.thumb
                         }
                        }
@@ -52,7 +52,7 @@ const lordofc = {
                             itemCount : 123,
                             itemCoun : 404,
                             surface : 404,
-                            message: `© LoRD-MD`,
+                            message: `@noureddine_ouafy`,
                             orderTitle: 'B',
                             thumbnail: global.thumb, 
                             sellerJid: '0@s.whatsapp.net'
@@ -175,7 +175,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
    })
         }
         const replay = (teks) => {
-            hisoka.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `ʟᴏʀᴅ-ᴍᴅ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ`,"body": `Follow me on instagram`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": global.tgumb,"sourceUrl": "https://instagram.com/__light__seeker__3?igshid=YmMyMTA2M2Y="}}}, { quoted: lordofc})
+            hisoka.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `ʟᴏʀᴅ-ᴍᴅ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ`,"body": `Follow me on instagram`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": global.tgumb,"sourceUrl": "https://instagram.com/noureddine_ouafy"}}}, { quoted: lordofc})
         }
 	    
         // Group
@@ -861,22 +861,22 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: '𝑆𝑜𝑢𝑟𝑐𝑒 𝐶𝑜𝑑𝑒',
-                                    url: 'https://github.com/Lord-official/LoRD-MD'
+                                    displayText: 'قناتي',
+                                    url: 'https://youtube.com/c/NoureddineOuafy'
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: '𝐼𝑛𝑠𝑡𝑎𝑔𝑟𝑎𝑚',
-                                    url: 'https://instagram.com/__light__seeker__3?igshid=YmMyMTA2M2Y='
+                                    displayText: 'انستغرامي',
+                                    url: 'https://instagram.com/noureddine_ouafy'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '𝐵𝑜𝑡 𝑆𝑡𝑎𝑡𝑢𝑠',
+                                    displayText: 'حالة البوت',
                                     id: 'ping'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '𝑂𝑤𝑛𝑒𝑟',
+                                    displayText: 'صاحبه',
                                     id: 'owner'
                                 }  
                             }, {
@@ -900,17 +900,17 @@ break
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: '𝑆𝑜𝑢𝑟𝑐𝑒 𝐶𝑜𝑑𝑒',
-                                    url: 'https://github.com/Lord-official/LoRD-MD '
+                                    displayText: 'قناتي',
+                                    url: 'https://youtube.com/c/NoureddineOuafy '
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: '𝐼𝑛𝑠𝑡𝑎𝑔𝑟𝑎𝑚',
-                                    url: 'https://instagram.com/__light__seeker__3?igshid=YmMyMTA2M2Y='
+                                    displayText: 'انستغرامي',
+                                    url: 'https://instagram.com/noureddine_ouafy'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '𝐵𝑜𝑡 𝑆𝑡𝑎𝑡𝑢𝑠',
+                                    displayText: 'حالة البوت',
                                     id: 'ping'
                                 }
                             }, {
@@ -1151,7 +1151,7 @@ const { instagramdl, instagramdlv2, instagramdlv3 } = require('@bochilteam/scrap
              hisoka.sendMessage(m.chat, { text :   err }, {quoted : m})}
             }
           break
-          case 'bot': case 'lord': {
+          case 'bot': case 'Bobiz bot': {
     let fetch = require('node-fetch')
     let sonic = await fetch('http://api.brainshop.ai/get?bid=166097&key=HjOshKCh0sGkzYwo&uid=teamcloseup&msg=${text}')
     let json = await sonic.json()
@@ -1159,7 +1159,7 @@ const { instagramdl, instagramdlv2, instagramdlv3 } = require('@bochilteam/scrap
     m.reply(cnt)
 }
 break
-case 'doc':function _0x3798(){const _0x1c4404=['3QVbawh','LoRD','18ZWgLik','11SaKIxq','4124475MdGufW','305582GzngvH','reply','1637909bWVGhc','6236740XKPhyf','603918TElJtu','.mp3','995812icmpIb','Loading...','sendMessage','2952392ayprlm','4CGdTcm','test','download','audio/mpeg'];_0x3798=function(){return _0x1c4404;};return _0x3798();}function _0x405e(_0x402358,_0x3755b8){const _0x37981d=_0x3798();return _0x405e=function(_0x405e4b,_0x1380d5){_0x405e4b=_0x405e4b-0x83;let _0x305f02=_0x37981d[_0x405e4b];return _0x305f02;},_0x405e(_0x402358,_0x3755b8);}const _0x3c187=_0x405e;(function(_0x319060,_0x558715){const _0x2f2072=_0x405e,_0x282936=_0x319060();while(!![]){try{const _0x2c57b5=-parseInt(_0x2f2072(0x93))/0x1*(-parseInt(_0x2f2072(0x89))/0x2)+-parseInt(_0x2f2072(0x84))/0x3*(parseInt(_0x2f2072(0x8f))/0x4)+-parseInt(_0x2f2072(0x88))/0x5+-parseInt(_0x2f2072(0x8d))/0x6+-parseInt(_0x2f2072(0x8b))/0x7+parseInt(_0x2f2072(0x92))/0x8*(parseInt(_0x2f2072(0x86))/0x9)+parseInt(_0x2f2072(0x8c))/0xa*(parseInt(_0x2f2072(0x87))/0xb);if(_0x2c57b5===_0x558715)break;else _0x282936['push'](_0x282936['shift']());}catch(_0x113582){_0x282936['push'](_0x282936['shift']());}}}(_0x3798,0x89ce0));{if(!/video/[_0x3c187(0x94)](mime)&&!/audio/[_0x3c187(0x94)](mime))throw'Send/Reply\x20Video/Audio\x20You\x20Want\x20To\x20Convert\x20Into\x20Document\x20With\x20Title\x0aExample:\x20doc\x20+\x20text';m[_0x3c187(0x8a)](_0x3c187(0x90));let media=await quoted[_0x3c187(0x95)](),{toAudio}=require('./lib/converter'),audio=await toAudio(media,'mp4');hisoka[_0x3c187(0x91)](m['chat'],{'document':audio,'mimetype':_0x3c187(0x83),'fileName':(q?q:_0x3c187(0x85))+_0x3c187(0x8e)},{'quoted':m});}
+case 'doc':function _0x3798(){const _0x1c4404=['3QVbawh','Bobiz bot','18ZWgLik','11SaKIxq','4124475MdGufW','305582GzngvH','reply','1637909bWVGhc','6236740XKPhyf','603918TElJtu','.mp3','995812icmpIb','Loading...','sendMessage','2952392ayprlm','4CGdTcm','test','download','audio/mpeg'];_0x3798=function(){return _0x1c4404;};return _0x3798();}function _0x405e(_0x402358,_0x3755b8){const _0x37981d=_0x3798();return _0x405e=function(_0x405e4b,_0x1380d5){_0x405e4b=_0x405e4b-0x83;let _0x305f02=_0x37981d[_0x405e4b];return _0x305f02;},_0x405e(_0x402358,_0x3755b8);}const _0x3c187=_0x405e;(function(_0x319060,_0x558715){const _0x2f2072=_0x405e,_0x282936=_0x319060();while(!![]){try{const _0x2c57b5=-parseInt(_0x2f2072(0x93))/0x1*(-parseInt(_0x2f2072(0x89))/0x2)+-parseInt(_0x2f2072(0x84))/0x3*(parseInt(_0x2f2072(0x8f))/0x4)+-parseInt(_0x2f2072(0x88))/0x5+-parseInt(_0x2f2072(0x8d))/0x6+-parseInt(_0x2f2072(0x8b))/0x7+parseInt(_0x2f2072(0x92))/0x8*(parseInt(_0x2f2072(0x86))/0x9)+parseInt(_0x2f2072(0x8c))/0xa*(parseInt(_0x2f2072(0x87))/0xb);if(_0x2c57b5===_0x558715)break;else _0x282936['push'](_0x282936['shift']());}catch(_0x113582){_0x282936['push'](_0x282936['shift']());}}}(_0x3798,0x89ce0));{if(!/video/[_0x3c187(0x94)](mime)&&!/audio/[_0x3c187(0x94)](mime))throw'Send/Reply\x20Video/Audio\x20You\x20Want\x20To\x20Convert\x20Into\x20Document\x20With\x20Title\x0aExample:\x20doc\x20+\x20text';m[_0x3c187(0x8a)](_0x3c187(0x90));let media=await quoted[_0x3c187(0x95)](),{toAudio}=require('./lib/converter'),audio=await toAudio(media,'mp4');hisoka[_0x3c187(0x91)](m['chat'],{'document':audio,'mimetype':_0x3c187(0x83),'fileName':(q?q:_0x3c187(0x85))+_0x3c187(0x8e)},{'quoted':m});}
             break
            case 'find' :{
 
@@ -1620,35 +1620,35 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     footerText: "@noureddine_ouafy",
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "Group Features",
+								"title": "BOBIZ BOT BY NOUREDDINE OUAFY",
 								"rows": [
 									{
-										"title": "𝑮𝒓𝒐𝒖𝒑 𝑴𝒆𝒏𝒖",
+										"title": "قسم خاص بصاحب البوت",
 										"description": "",
 										"rowId": `groupmenu`
 									},
 									{
-										"title": "𝑪𝒐𝒏𝒗𝒆𝒓𝒕 𝑴𝒆𝒏𝒖",
+										"title": "قسم تحويل الملفات (ملصقات..)",
 										"description": "",
 										"rowId": `convertmenu`
 									},
 									{
-										"title": "𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅 𝑴𝒆𝒏𝒖",
+										"title": "قسم تحميل الفيديوات",
 										"description": "",
 										"rowId": `downloadmenu`
 									},
 									{
-										"title": "𝑺𝒆𝒂𝒓𝒄𝒉 𝑴𝒆𝒏𝒖",
+										"title": "قسم البحث",
 										"description": "",
 										"rowId": `searchmenu`
 									},
 										{
-											"title": "𝑴𝒂𝒊𝒏 𝑴𝒆𝒏𝒖",
+											"title": "قسم خاص بصاحب البوت",
 										"description": "",
 										"rowId": `mainmenu`
 										},
 										{
-											"title": "𝑫𝒂𝒕𝒂𝑩𝒂𝒔𝒆 𝑴𝒆𝒏𝒖",
+											"title": "قسم فارغ",
 										"description": "",
 										"rowId": `databasemenu`
 										},
@@ -1890,14 +1890,7 @@ case 'mainmenu': {
 break
 case 'databasemenu': {
 	anu = `
- *𝑫𝑨𝑻𝑨𝑩𝑨𝑺𝑬 𝑴𝑬𝑵𝑼*
-𑁍 ${prefix}𝑠𝑒𝑡𝑐𝑚𝑑
-𑁍 ${prefix}𝑙𝑖𝑠𝑡𝑐𝑚𝑑
-𑁍 ${prefix}𝑑𝑒𝑙𝑐𝑚𝑑
-𑁍 ${prefix}𝑎𝑑𝑑𝑚𝑠𝑔
-𑁍 ${prefix}𝑙𝑖𝑠𝑡𝑚𝑠𝑔
-𑁍 ${prefix}𝑔𝑒𝑡𝑚𝑠𝑔
-𑁍 ${prefix}𝑑𝑒𝑙𝑚𝑠𝑔
+ 
 `
 reply(anu)
             }
