@@ -92,15 +92,15 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                         hydratedTemplate: {
                             hydratedContentText: hehe,
                                locationMessage: {
-                           jpegThumbnail: fs.readFileSync('./lib/lord.jpg')},
+                           jpegThumbnail: fs.readFileSync('./lib/')},
       
                        //    jpegThumbnail: ppuser,
-                            hydratedFooterText: `LoRD-MD`,
+                            hydratedFooterText: `BOT`,
                             hydratedButtons: [{
                                 
                                 urlButton: {
                                     displayText: '𝒊𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎',
-                                    url: 'https://instagram.com/__light__seeker__3?igshid=YmMyMTA2M2Y='
+                                    url: 'https://instagram.com/8xas_h'
                                 }
                             }]
                         }
